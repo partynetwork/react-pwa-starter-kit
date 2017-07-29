@@ -1,1 +1,16 @@
 .idea/
+
+# build output
+dist
+.next
+
+# dependencies
+node_modules
+
+# logs
+*.log
+
+# coverage
+coverage
+
+.DS_Store

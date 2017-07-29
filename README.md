@@ -30,7 +30,6 @@
 ```
 .eslint.js
 .stylint.js
-jest.conf.js
 package.json
 README.md
 ```
@@ -48,3 +47,8 @@ You will also see any lint errors in the console.
 
 Launches the test runner in the interactive watch mode.
 
+## Issue
+
+#### Unterminated statement warning
+
+- To fix this, change the following setting in `Editor > Inspections` of WebStorm:
