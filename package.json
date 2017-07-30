@@ -124,7 +124,9 @@
   },
   "scripts": {
     "start": "cross-env NODE_ENV=development babel-node ./server",
+    "start:prod": "cross-env NODE_ENV=production babel-node ./server",
     "test": "jest --config ./jest.config.js",
+    "build": "next build",
     "lint-js": "eslint --ignore-path .gitignore --ignore-pattern \"!**/.*\" .",
     "lint-css": "stylelint \"src/**/*.{css,less,scss,sss}\""
   }

@@ -17,10 +17,8 @@ import commonCtrl from './controllers/common'
  * Load environment
  */
 dotenv.load({
-    path: `server/.env.${process.env.NODE_ENV}` || `development`,
+    path: `server/.env.${process.env.NODE_ENV || `development`}`,
 })
-
-
 
 /**
  * Create Express server.
