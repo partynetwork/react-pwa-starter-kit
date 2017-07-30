@@ -1,22 +1,29 @@
 import React from 'react'
-import {ThemeProvider} from 'styled-components'
+import {Provider as ThemeProvider} from 'rebass'
 
 const defaultTheme = {
-    primary: '#bf58be',
-    success: '#00FF6D',
-    warning: '#FECE00',
-    error: '#e21f43',
-    info: '#549fe2',
-
-    // For `styled-component-breakpoint` number is start of screen resolution
-    breakpoints: {
-        xs: 0,
-        sm: 576,
-        md: 768,
-        lg: 992,
-        xl: 1200,
+    colors: {
+        primary: '#bf58be',
+        success: '#00FF6D',
+        warning: '#FECE00',
+        error: '#e21f43',
+        info: '#549fe2',
     },
-};
+
+    breakpoints: [
+        // min-width breakpoints in ems
+        40, 52, 64
+    ],
+    space: [
+        0, 6, 12, 18, 24, 30, 36
+    ],
+    fontSizes: [
+        12, 16, 18, 24, 36, 48, 72
+    ],
+    weights: [
+        400, 600
+    ]
+}
 
 // Create a GreenSection component that renders its children wrapped in
 // a ThemeProvider with a green theme

@@ -1,7 +1,6 @@
-import React,{Component} from 'react'
+import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 import {
-    Provider,
     Container,
     Heading,
     Blockquote,
@@ -15,13 +14,17 @@ import {FormattedMessage} from 'react-intl'
 
 import messages from './messages'
 
-class Todo extends Component {
+class Demo extends Component {
 
-    componentWillMount() {}
-    componentDidMount() {}
+    componentWillMount() {
+    }
+
+    componentDidMount() {
+    }
+
     render() {
         return (
-            <Provider>
+            <div>
                 <Heading is="h1" mb={3} center>
                     <FormattedMessage {...messages.pageName}/>
                 </Heading>
@@ -33,7 +36,6 @@ class Todo extends Component {
                         </NavLink>
                     </Toolbar>
 
-                    <NavLink href='https://github.com/zeit/next.js/' target='_blank'>Next.js</NavLink>
                     <Flex justify='center'>
                         <Box width={1 / 2}>
                             <Blockquote center fontSize={3} py={4}>
@@ -47,12 +49,12 @@ class Todo extends Component {
                         </Box>
                     </Flex>
                 </Container>
-            </Provider>
+            </div>
         )
     }
 }
 
-Todo.propTypes = {};
-Todo.defaultProps = {};
+Demo.propTypes = {}
+Demo.defaultProps = {}
 
-export default Todo
+export default Demo

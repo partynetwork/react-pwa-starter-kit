@@ -1,6 +1,6 @@
 {
-  "name": "reax-boilerplate",
-  "version": "0.0.0",
+  "name": "rext-boilerplate",
+  "version": "0.0.1",
   "private": true,
   "engines": {
     "node": ">=6.5",
@@ -124,6 +124,7 @@
   },
   "scripts": {
     "start": "cross-env NODE_ENV=development babel-node ./server",
+    "test": "jest --config ./jest.config.js",
     "lint-js": "eslint --ignore-path .gitignore --ignore-pattern \"!**/.*\" .",
     "lint-css": "stylelint \"src/**/*.{css,less,scss,sss}\""
   }

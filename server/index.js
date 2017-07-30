@@ -5,7 +5,7 @@ import next from 'next'
 import compression from 'compression'
 import bodyParser from 'body-parser'
 import errorHandler from 'errorhandler'
-import logger from 'morgan'
+// import logger from 'morgan'
 import cors from 'cors'
 
 /**
@@ -34,7 +34,7 @@ const sessionMiddleware = session({
 })
 app.use(sessionMiddleware)
 app.use(compression())
-app.use(logger('dev'))
+// app.use(logger('dev'))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(commonCtrl.initialRequest)

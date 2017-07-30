@@ -1,23 +1,11 @@
-/* eslint-env jest */
-
-import {shallow} from 'enzyme'
 import React from 'react'
-import renderer from 'react-test-renderer'
+import {shallow} from 'enzyme'
 
-import App from '../index.js'
+import PageIndex from '../index'
 
-describe('With Enzyme', () => {
-    it('App shows "Hello world!"', () => {
-        const app = shallow(<App/>)
-
-        // expect(app.find('p').text()).toEqual('Hello World!')
-    })
-})
-
-describe('With Snapshot Testing', () => {
-    it('App shows "Hello world!"', () => {
-        const component = renderer.create(<App/>)
-        const tree = component.toJSON()
-        expect(tree).toMatchSnapshot()
+describe('Test index page ', () => {
+    it('Test render with props', () => {
+        const wrapper = shallow(<PageIndex/>)
+        console.info("wrapper :",wrapper)
     })
 })

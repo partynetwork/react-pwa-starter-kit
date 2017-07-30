@@ -1,4 +1,6 @@
-## React Web Starter kit
+## Rext Boilerplate 
+
+Next.js Boilerplate for project web react starter.
 
 ## Libraries
 
